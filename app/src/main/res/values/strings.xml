@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Pet</string>
+    <string name="text_register">Register</string>
+    <string name="text_discription_register">Sign in now to acces your excercises and saved music.</string>
+    <string name="text_my_account">My Account</string>
+    <string name="edir_text_hint_full_name">Full name</string>
+    <string name="edir_text_hint_email">Enter you email</string>
+    <string name="edir_text_hint_password">Password</string>
 </resources>

@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="background_activity_register">#07362E</color>
+    <color name="base_color_text">#D8E2E0</color>
+    <color name="change_color_text">#219653</color>
+    <color name="bg_for_register_form">#0D473D</color>
+    <color name="color_for_sroke_shape">#638A84</color>
+    <color name="color_hint_edit_text">#638A84</color>
 </resources>
