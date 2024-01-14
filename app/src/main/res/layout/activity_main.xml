@@ -66,7 +66,7 @@
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="0dp"
-                android:layout_height="480dp"
+                android:layout_height="510dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="52dp"
                 android:layout_marginEnd="20dp"
@@ -124,44 +124,73 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textInputEditText"
-                android:layout_width="0dp"
-                android:layout_height="64dp"
+                style="@style/Hint_drawable_for_edit_text"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="20dp"
-                android:background="@drawable/shape_for_register_user_data"
+                android:drawableStart="@drawable/profile_1"
                 android:hint="@string/edir_text_hint_full_name"
-                android:textColorHint="@color/color_hint_edit_text"
+                android:inputType="text"
                 app:layout_constraintEnd_toEndOf="@+id/imageView4"
                 app:layout_constraintStart_toStartOf="@+id/imageView4"
                 app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textInputEditText2"
-                android:layout_width="0dp"
-                android:layout_height="64dp"
+                style="@style/Hint_drawable_for_edit_text"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
-                android:background="@drawable/shape_for_register_user_data"
+                android:drawableStart="@drawable/message"
                 android:hint="@string/edir_text_hint_email"
-                android:textColorHint="@color/color_hint_edit_text"
+                android:inputType="textEmailAddress"
                 app:layout_constraintEnd_toEndOf="@+id/imageView4"
                 app:layout_constraintStart_toStartOf="@+id/imageView4"
                 app:layout_constraintTop_toBottomOf="@+id/textInputEditText" />
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditText3"
+                style="@style/Hint_drawable_for_edit_text"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:drawableStart="@drawable/lock"
+                android:hint="@string/edit_text_hint_password"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                app:layout_constraintStart_toStartOf="@+id/imageView4"
+                app:layout_constraintTop_toBottomOf="@+id/textInputEditText2" />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/pt_sans"
+                android:text="@string/text_check_box"
+                android:textColor="@color/color_for_check_box"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="@+id/imageView4"
+                app:layout_constraintStart_toStartOf="@+id/imageView4"
+                app:layout_constraintTop_toBottomOf="@+id/textInputEditText3" />
+
+            <Button
+                android:id="@+id/button"
                 android:layout_width="0dp"
                 android:layout_height="64dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
-                android:background="@drawable/shape_for_register_user_data"
-                android:hint="@string/edir_text_hint_password"
-                android:textColorHint="@color/color_hint_edit_text"
+                android:backgroundTint="@color/color_button_cotinue"
+                android:shadowColor="#9EFEC265"
+                android:text="@string/text_button_continue"
+                android:textColor="@color/color_button_text"
+                app:cornerRadius="16dp"
                 app:layout_constraintEnd_toEndOf="@+id/imageView4"
                 app:layout_constraintStart_toStartOf="@+id/imageView4"
-                app:layout_constraintTop_toBottomOf="@+id/textInputEditText2" />
+                app:layout_constraintTop_toBottomOf="@+id/checkBox" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

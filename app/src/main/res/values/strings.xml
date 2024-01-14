@@ -5,5 +5,10 @@
     <string name="text_my_account">My Account</string>
     <string name="edir_text_hint_full_name">Full name</string>
     <string name="edir_text_hint_email">Enter you email</string>
-    <string name="edir_text_hint_password">Password</string>
+    <string name="edit_text_hint_password">Password</string>
+    <string name="text_check_box">I accepted Terms &amp;Privacy Policy</string>
+    <string name="text_button_continue">Continue</string>
+
+
+
 </resources>

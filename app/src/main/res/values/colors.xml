@@ -8,4 +8,7 @@
     <color name="bg_for_register_form">#0D473D</color>
     <color name="color_for_sroke_shape">#638A84</color>
     <color name="color_hint_edit_text">#638A84</color>
+    <color name="color_for_check_box">#D8E2E0</color>
+    <color name="color_button_cotinue">#FEC265</color>
+    <color name="color_button_text">#141333</color>
 </resources>
