@@ -183,6 +183,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
+                android:onClick="nextScreenButton"
                 android:backgroundTint="@color/color_button_cotinue"
                 android:text="@string/text_button_continue"
                 android:textColor="@color/color_button_text"
@@ -190,6 +191,7 @@
                 app:layout_constraintEnd_toEndOf="@+id/imageView4"
                 app:layout_constraintStart_toStartOf="@+id/imageView4"
                 app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
