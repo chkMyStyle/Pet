@@ -5,13 +5,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import com.example.pet.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        val buttonNexScreen = findViewById<Button>(R.id.buttonContinue)
+        val binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        val buttonNexScreen = binding.buttonContinue
         nextScreenButton(buttonNexScreen)
 
     }
