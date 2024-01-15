@@ -162,7 +162,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textInputEditText2" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/checkBoxRegister"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -189,7 +189,7 @@
                 app:cornerRadius="16dp"
                 app:layout_constraintEnd_toEndOf="@+id/imageView4"
                 app:layout_constraintStart_toStartOf="@+id/imageView4"
-                app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+                app:layout_constraintTop_toBottomOf="@+id/checkBoxRegister" />
 
 
 
