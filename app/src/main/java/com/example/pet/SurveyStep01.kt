@@ -13,12 +13,22 @@ class SurveyStep01 : AppCompatActivity() {
         setContentView(binding.root)
 
         val backButton = binding.backButton
+        val buttonCreateAccount = binding.buttonCreateAccount
+
         backButtonClick(backButton)
+        createAccountButton(buttonCreateAccount)
     }
 
     fun backButtonClick(backButton: View) {
         backButton.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+    }
+
+    fun createAccountButton(buttonCreateAccount: View){
+        buttonCreateAccount.setOnClickListener{
+            val intent = Intent(this, SurveyStep02::class.java)
             startActivity(intent)
         }
     }
