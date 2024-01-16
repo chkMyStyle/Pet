@@ -21,7 +21,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.pet.BornActivity" />
+        <activity android:name="com.example.pet.SurveyStep01" />
+        <activity android:name="com.example.pet.SurveyStep02" />
 
         <meta-data
             android:name="preloaded_fonts"

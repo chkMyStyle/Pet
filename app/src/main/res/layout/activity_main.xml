@@ -10,18 +10,15 @@
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toTopOf="parent">
 
-
     <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:id="@+id/root_coordinator"
+        android:id="@+id/root_coordinator_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:context=".MainActivity">
-
 
             <ImageView
                 android:id="@+id/imageView8"
@@ -184,16 +181,15 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
                 android:backgroundTint="@color/color_button_cotinue"
+                android:fontFamily="@font/pt_sans_bold"
                 android:text="@string/text_button_continue"
                 android:textColor="@color/color_button_text"
+                android:textSize="16sp"
                 app:cornerRadius="16dp"
                 app:layout_constraintEnd_toEndOf="@+id/imageView4"
                 app:layout_constraintStart_toStartOf="@+id/imageView4"
                 app:layout_constraintTop_toBottomOf="@+id/checkBoxRegister" />
 
-
-
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </ScrollView>

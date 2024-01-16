@@ -11,12 +11,14 @@
     app:layout_constraintTop_toTopOf="parent">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/root_coordinator_2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            tools:context="com.example.pet.SurveyStep01">
 
             <ImageButton
                 android:id="@+id/back_button"
@@ -24,18 +26,16 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="40dp"
-                android:layout_marginBottom="500dp"
                 android:background="@color/cardview_shadow_end_color"
                 android:contentDescription="@string/description_button_back"
                 android:src="@drawable/back_icon"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginEnd="20dp"
@@ -75,6 +75,25 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="688dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/color_button_cotinue"
+                android:fontFamily="@font/pt_sans_bold"
+                android:text="@string/text_button_create_account"
+                android:textColor="@color/color_button_text"
+                android:textSize="16sp"
+                app:cornerRadius="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>

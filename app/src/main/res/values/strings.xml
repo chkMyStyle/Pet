@@ -11,6 +11,7 @@
     <string name="description_button_back">button_back</string>
     <string name="text_when_were_you_born">When were you\nborn?</string>
     <string name="text2_born_activity">We need this information to ensure our community stays safe</string>
+    <string name="text_button_create_account">Create account</string>
 
 
 </resources>
