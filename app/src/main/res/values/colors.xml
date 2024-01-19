@@ -6,9 +6,12 @@
     <color name="base_color_text">#D8E2E0</color>
     <color name="change_color_text">#219653</color>
     <color name="bg_for_register_form">#0D473D</color>
+    <color name="plate_bg_for_log_or_reg">#08352E</color>
     <color name="color_for_sroke_shape">#638A84</color>
     <color name="color_hint_edit_text">#638A84</color>
-    <color name="color_for_check_box">#D8E2E0</color>
     <color name="color_button_cotinue">#FEC265</color>
     <color name="color_button_text">#141333</color>
+    <color name="color_active_button_fill">#0D473D</color>
+    <color name="color_active_button">#219653</color>
+    <color name="color_no_active_button_stroke">#0B483E</color>
 </resources>

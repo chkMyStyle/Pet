@@ -6,6 +6,7 @@
         <item name="android:layout_height">64dp</item>
         <item name="android:drawablePadding">10dp</item>
         <item name="android:padding">10dp</item>
+<!--        <item name="backgroundTint">@color/color_no_active_button</item>-->
         <item name="android:textColorHint">@color/color_hint_edit_text</item>
         <item name="android:background">@drawable/shape_for_register_user_data</item>
     </style>

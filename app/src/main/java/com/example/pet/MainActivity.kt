@@ -14,8 +14,8 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val buttonNexScreen = binding.buttonContinue
-        val checkBoxRegister = binding.checkBoxRegister
+        val buttonNexScreen = binding.buttonContinueMain
+        val checkBoxRegister = binding.checkBoxRegisterMain
 
         nextScreenButton(buttonNexScreen, checkBoxRegister)
 
