@@ -90,8 +90,10 @@
             <ImageView
                 android:id="@+id/imagePlateChooseRegisterMain"
                 android:layout_width="148dp"
-                android:layout_height="48dp"
-                android:layout_marginEnd="12dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="6dp"
                 android:scaleType="center"
                 android:src="@drawable/plate_choose_register"
                 app:layout_constraintBottom_toBottomOf="@+id/imagePlateBgForLogOrRegMain"

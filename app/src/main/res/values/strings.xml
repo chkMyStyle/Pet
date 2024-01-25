@@ -15,6 +15,27 @@
     <string name="text_header_step_02">What brought you here today?</string>
     <string name="text_discription_step_02">Select at least 1 to continue</string>
     <string name="text_wellbeing">Wellbeing</string>
+    <string name="text_button_var_1_step_02">Sleep</string>
+    <string name="text_button_var_2_step_02">Happiness &amp; Joy</string>
+    <string name="text_button_var_3_step_02">Healthy Ageing</string>
+    <string name="text_button_var_4_step_02">Morning Energy</string>
+    <string name="text_button_var_5_step_02">Performance</string>
+    <string name="text_button_var_6_step_02">Self - confidence</string>
+    <string name="text_button_var_7_step_02">Stillness</string>
+    <string name="text_button_var_8_step_02">Relaxation</string>
+    <string name="text_mental_health_step03">Mental Health</string>
+    <string name="toggleButton1Step03">Anxiety</string>
+    <string name="toggleButton2Step03">Sadness</string>
+    <string name="toggleButton3Step03">Stress</string>
+    <string name="toggleButton4Step03">Panic Attack</string>
+    <string name="toggleButton5Step03">Sexuality</string>
+    <string name="toggleButton6Step03">Manage Pain</string>
+    <string name="toggleButton7Step03">For My kids</string>
+    <string name="toggleButton8Step03">Freedom from suffering</string>
+    <string name="toggleButton9Step03">The Timer</string>
+    <string name="toggleButton10Step03">Spirituality</string>
+    <string name="toggleButton11Step03">Mindfulness</string>
+    <string name="toggleButton12Step03">Meditation</string>
 
 
 </resources>

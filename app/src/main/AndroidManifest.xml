@@ -24,6 +24,7 @@
         </activity>
         <activity android:name="com.example.pet.SurveyStep01" />
         <activity android:name="com.example.pet.SurveyStep02" />
+        <activity android:name="com.example.pet.SurveyStep03" />
 
         <meta-data
             android:name="preloaded_fonts"

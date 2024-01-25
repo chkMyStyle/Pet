@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ButtonContinue">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">64dp</item>
+        <item name="android:textColor">@color/color_button_text</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/pt_sans_bold</item>
+        <item name="backgroundTint">@color/color_button_cotinue</item>
+        <item name="android:text">@string/text_button_continue</item>
+    </style>
+
+    <style name="ButtonCreateAccount" parent="ButtonContinue">
+        <item name="android:text">@string/text_button_create_account</item>
+    </style>
+</resources>

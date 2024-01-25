@@ -12,8 +12,8 @@ class SurveyStep01 : AppCompatActivity() {
         val binding = ActivitySurveyStep01Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val backButton = binding.backButton
-        val buttonCreateAccount = binding.buttonCreateAccount
+        val backButton = binding.imageButtonBackButtonStep01
+        val buttonCreateAccount = binding.buttonCreateAccountStep01
 
         backButtonClick(backButton)
         createAccountButton(buttonCreateAccount)
@@ -26,8 +26,8 @@ class SurveyStep01 : AppCompatActivity() {
         }
     }
 
-    fun createAccountButton(buttonCreateAccount: View){
-        buttonCreateAccount.setOnClickListener{
+    fun createAccountButton(buttonCreateAccount: View) {
+        buttonCreateAccount.setOnClickListener {
             val intent = Intent(this, SurveyStep02::class.java)
             startActivity(intent)
         }

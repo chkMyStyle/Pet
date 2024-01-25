@@ -5,7 +5,6 @@
         <item name="colorPrimary">@color/bg_for_register_form</item>
         <item name="colorOutlineVariant">@color/background_activity_register</item>
         <item name="colorOnPrimary">@color/white</item>
-<!--        <item name="materialButtonStyle">@style/ButtonStaleChoose</item>-->
     </style>
 
     <style name="Theme.Pet" parent="Base.Theme.Pet" />

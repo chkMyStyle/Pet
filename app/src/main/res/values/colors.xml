@@ -14,4 +14,6 @@
     <color name="color_active_button_fill">#0D473D</color>
     <color name="color_active_button">#219653</color>
     <color name="color_no_active_button_stroke">#0B483E</color>
+    <color name="color_text_toggle_button_no_active">#A7BDB9</color>
+    <color name="color_text_toggle_button_active">#FDFEFE</color>
 </resources>

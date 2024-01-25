@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_activity_register"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context="com.example.pet.SurveyStep03">
+
+
+            <ImageButton
+                android:id="@+id/imageButtonBackStep03"
+                style="@style/BackButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageViewProgressBarStep03"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonBackStep03"
+                app:srcCompat="@drawable/progress_bar_step_03" />
+
+            <TextView
+                android:id="@+id/textViewTitle1Step03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="45dp"
+                android:fontFamily="@font/pt_serif_bold"
+                android:text="@string/text_mental_health_step03"
+                android:textColor="@color/color_active_button"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewProgressBarStep03" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton1Step03"
+                style="@style/ToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="24dp"
+                android:textOff="@string/toggleButton1Step03"
+                android:textOn="@string/toggleButton1Step03"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTitle1Step03" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton2Step03"
+                style="@style/ToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:textOff="@string/toggleButton2Step03"
+                android:textOn="@string/toggleButton2Step03"
+                app:layout_constraintBottom_toBottomOf="@+id/toggleButton1Step03"
+                app:layout_constraintStart_toEndOf="@+id/toggleButton1Step03"
+                app:layout_constraintTop_toTopOf="@+id/toggleButton1Step03" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton3Step03"
+                style="@style/ToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:textOff="@string/toggleButton3Step03"
+                android:textOn="@string/toggleButton3Step03"
+                app:layout_constraintBottom_toBottomOf="@+id/toggleButton2Step03"
+                app:layout_constraintStart_toEndOf="@+id/toggleButton2Step03"
+                app:layout_constraintTop_toTopOf="@+id/toggleButton2Step03" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton4Step03"
+                style="@style/ToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:textOff="@string/toggleButton4Step03"
+                android:textOn="@string/toggleButton4Step03"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toggleButton1Step03" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton5Step03"
+                style="@style/ToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:textOff="@string/toggleButton5Step03"
+                android:textOn="@string/toggleButton5Step03"
+                app:layout_constraintBottom_toBottomOf="@+id/toggleButton4Step03"
+                app:layout_constraintStart_toEndOf="@+id/toggleButton4Step03"
+                app:layout_constraintTop_toTopOf="@+id/toggleButton4Step03" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton6Step03"
+                style="@style/ToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:textOff="@string/toggleButton6Step03"
+                android:textOn="@string/toggleButton6Step03"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toggleButton4Step03" />
+
+            <TextView
+                android:id="@+id/textViewTitle2Step03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/pt_serif_bold"
+                android:text="@string/text_mental_health_step03"
+                android:textColor="@color/color_active_button"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toggleButton6Step03" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton7Step03"
+                style="@style/ToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="24dp"
+                android:textOff="@string/toggleButton7Step03"
+                android:textOn="@string/toggleButton7Step03"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTitle2Step03" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton8Step03"
+                style="@style/ToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:textOff="@string/toggleButton8Step03"
+                android:textOn="@string/toggleButton8Step03"
+                app:layout_constraintBottom_toBottomOf="@+id/toggleButton7Step03"
+                app:layout_constraintStart_toEndOf="@+id/toggleButton7Step03"
+                app:layout_constraintTop_toTopOf="@+id/toggleButton7Step03" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton9Step03"
+                style="@style/ToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:textOff="@string/toggleButton9Step03"
+                android:textOn="@string/toggleButton9Step03"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toggleButton7Step03" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton10Step03"
+                style="@style/ToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:textOff="@string/toggleButton10Step03"
+                android:textOn="@string/toggleButton10Step03"
+                app:layout_constraintBottom_toBottomOf="@+id/toggleButton9Step03"
+                app:layout_constraintStart_toEndOf="@+id/toggleButton9Step03"
+                app:layout_constraintTop_toTopOf="@+id/toggleButton9Step03" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton11Step03"
+                style="@style/ToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:textOff="@string/toggleButton11Step03"
+                android:textOn="@string/toggleButton11Step03"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toggleButton9Step03" />
+
+            <ToggleButton
+                android:id="@+id/toggleButton12Step03"
+                style="@style/ToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:textOff="@string/toggleButton12Step03"
+                android:textOn="@string/toggleButton12Step03"
+                app:layout_constraintBottom_toBottomOf="@+id/toggleButton11Step03"
+                app:layout_constraintStart_toEndOf="@+id/toggleButton11Step03"
+                app:layout_constraintTop_toTopOf="@+id/toggleButton11Step03" />
+
+            <Button
+                android:id="@+id/buttonContinueStep03"
+                style="@style/ButtonContinue"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="71dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="60dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/toggleButton12Step03" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</ScrollView>

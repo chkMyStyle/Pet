@@ -1,14 +1,10 @@
 package com.example.pet
 
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.View
+import android.widget.ToggleButton
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.app.AppCompatDelegate
-import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO
-import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_YES
 import androidx.core.content.ContextCompat
 import com.example.pet.databinding.ActivitySurveyStep02Binding
 
@@ -19,37 +15,61 @@ class SurveyStep02 : AppCompatActivity() {
         setContentView(binding.root)
 
         val backButtonStep02 = binding.imageButtonBackStep02
-        val buttonChangeColor = binding.buttonChangeColor
+        val buttonContinue = binding.buttonContinueStep02
 
-        var isToggle = false
-        buttonChangeColor.background =
-            ContextCompat.getDrawable(this, R.drawable.choose_no_active_bar)
+        val buttonToggleClick1 = binding.toggleButton1Step02
+        val buttonToggleClick2 = binding.toggleButton2Step02
+        val buttonToggleClick3 = binding.toggleButton3Step02
+        val buttonToggleClick4 = binding.toggleButton4Step02
+        val buttonToggleClick5 = binding.toggleButton5Step02
+        val buttonToggleClick6 = binding.toggleButton6Step02
+        val buttonToggleClick7 = binding.toggleButton7Step02
+        val buttonToggleClick8 = binding.toggleButton8Step02
 
-        backButtonStap02(backButtonStep02)
+        backButtonStep02(backButtonStep02)
+        buttoContinue(buttonContinue)
 
+        buttonClick(buttonToggleClick1)
+        buttonClick(buttonToggleClick2)
+        buttonClick(buttonToggleClick3)
+        buttonClick(buttonToggleClick4)
+        buttonClick(buttonToggleClick5)
+        buttonClick(buttonToggleClick6)
+        buttonClick(buttonToggleClick7)
+        buttonClick(buttonToggleClick8)
+    }
 
-        buttonChangeColor.setOnClickListener {
-            isToggle = !isToggle
-            if (isToggle) {
-                buttonChangeColor.background =
+    fun buttonClick(toggleButton: ToggleButton) {
+        toggleButton.setOnClickListener {
+            if (toggleButton.isChecked) {
+                toggleButton.background =
                     ContextCompat.getDrawable(this, R.drawable.choose_active_button)
-                Log.d("MyApp", "Фон кнопки изменен на активный")
+                val textColor =
+                    ContextCompat.getColorStateList(this, R.color.color_text_toggle_button_active)
+                toggleButton.setTextColor(textColor)
             } else {
-                buttonChangeColor.background =
+                toggleButton.background =
                     ContextCompat.getDrawable(this, R.drawable.choose_no_active_bar)
-                Log.d("MyApp", "Фон кнопки изменен на неактивный")
+                val textColor = ContextCompat.getColorStateList(
+                    this,
+                    R.color.color_text_toggle_button_no_active
+                )
+                toggleButton.setTextColor(textColor)
             }
         }
     }
 
-    fun backButtonStap02(backButtonStep02: View) {
+    fun buttoContinue(buttonContinue: View) {
+        buttonContinue.setOnClickListener {
+            val intent = Intent(this, SurveyStep03::class.java)
+            startActivity(intent)
+        }
+    }
+
+    fun backButtonStep02(backButtonStep02: View) {
         backButtonStep02.setOnClickListener {
             val intent = Intent(this, SurveyStep01::class.java)
             startActivity(intent)
         }
-
     }
 }
-
-//        buttonChangeColor.backgroundTintList =
-//            ContextCompat.getColorStateList(this, R.color.color_no_active_button)
