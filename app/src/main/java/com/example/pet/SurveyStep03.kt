@@ -17,6 +17,9 @@ class SurveyStep03 : AppCompatActivity() {
         val backButtonStep03 = binding.imageButtonBackStep03
         backButton(backButtonStep03)
 
+        val buttonContinueStep03 = binding.buttonContinueStep03
+        buttonContinue(buttonContinueStep03)
+
         val toggleButton1Step03 = binding.toggleButton1Step03
         val toggleButton2Step03 = binding.toggleButton2Step03
         val toggleButton3Step03 = binding.toggleButton3Step03
@@ -65,6 +68,13 @@ class SurveyStep03 : AppCompatActivity() {
     fun backButton(backButton: View) {
         backButton.setOnClickListener {
             val intent = Intent(this, SurveyStep02::class.java)
+            startActivity(intent)
+        }
+    }
+
+    fun buttonContinue(view: View) {
+        view.setOnClickListener {
+            val intent = Intent(this, HomeStep04::class.java)
             startActivity(intent)
         }
     }

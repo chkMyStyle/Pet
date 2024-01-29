@@ -15,6 +15,12 @@ class SurveyStep01 : AppCompatActivity() {
         val backButton = binding.imageButtonBackButtonStep01
         val buttonCreateAccount = binding.buttonCreateAccountStep01
 
+        val yearNumberPicker = binding.numberPicker
+
+        yearNumberPicker.setFormatter { value ->
+            String.format("%d", value)
+        }
+
         backButtonClick(backButton)
         createAccountButton(buttonCreateAccount)
     }
