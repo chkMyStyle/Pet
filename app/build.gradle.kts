@@ -45,6 +45,9 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    
+    implementation("androidx.fragment:fragment-ktx:1.6.2")
+
 //    implementation("com.shawnlin:NumberPicker:2.4.10")
     implementation ("io.github.ShawnLin013:number-picker:2.4.13")
     testImplementation("junit:junit:4.13.2")
