@@ -7,6 +7,7 @@ import android.widget.ToggleButton
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.pet.databinding.ActivitySurveyStep02Binding
+import com.example.pet.databinding.FragmentYearOfBirthBinding
 
 class SurveyStep02 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -68,7 +69,7 @@ class SurveyStep02 : AppCompatActivity() {
 
     fun backButtonStep02(backButtonStep02: View) {
         backButtonStep02.setOnClickListener {
-            val intent = Intent(this, SurveyStep01::class.java)
+            val intent = Intent(this, FragmentYearOfBirthBinding::class.java)
             startActivity(intent)
         }
     }

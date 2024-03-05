@@ -6,6 +6,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.commit
+import androidx.fragment.app.replace
 import com.example.pet.databinding.FragmentRegistrationBinding
 import com.example.pet.databinding.FragmentYearOfBirthBinding
 
@@ -58,8 +60,10 @@ class YearOfBirthFragment : Fragment() {
 
     fun backButtonClick(backButton: View) {
         backButton.setOnClickListener {
-            val intent = Intent(requireContext(), FragmentRegistrationBinding::class.java)
-            startActivity(intent)
+            parentFragmentManager.commit {
+                replace<RegistrationFragment>(R.id.yearsOfBirdFragment)
+                addToBackStack(RegistrationFragment::class.java.simpleName)
+            }
         }
     }
 
@@ -68,6 +72,10 @@ class YearOfBirthFragment : Fragment() {
             val intent = Intent(requireContext(), SurveyStep02::class.java)
             startActivity(intent)
         }
+    }
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
     }
 
     companion object {

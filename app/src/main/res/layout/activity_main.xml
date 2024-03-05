@@ -10,6 +10,16 @@
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/registrationFragment"
         android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/yearsOfBirdFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/chooseMoodFragment"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
 </FrameLayout>

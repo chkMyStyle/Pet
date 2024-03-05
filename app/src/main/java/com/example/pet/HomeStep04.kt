@@ -9,6 +9,5 @@ class HomeStep04 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding = ActivityHomeStep04Binding.inflate(layoutInflater)
         setContentView(binding.root)
-
     }
 }

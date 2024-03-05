@@ -8,6 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.CheckBox
 import android.widget.Toast
+import androidx.fragment.app.commit
+import androidx.fragment.app.replace
 import com.example.pet.databinding.FragmentRegistrationBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -56,10 +58,18 @@ class RegistrationFragment : Fragment() {
                 Toast.makeText(requireContext(), "Подтвердите соглашение", Toast.LENGTH_SHORT)
                     .show()
             } else {
-                val intent = Intent(requireContext(), SurveyStep01::class.java)
-                startActivity(intent)
+                parentFragmentManager.commit {
+                    remove(this@RegistrationFragment)
+                    replace<YearOfBirthFragment>(R.id.registrationFragment)
+                    addToBackStack(YearOfBirthFragment::class.java.simpleName)
+                }
             }
         }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
     }
 
     companion object {
