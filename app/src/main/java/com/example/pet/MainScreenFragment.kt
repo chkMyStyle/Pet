@@ -5,11 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.CheckBox
-import android.widget.Toast
-import androidx.fragment.app.commit
-import androidx.fragment.app.replace
-import com.example.pet.databinding.FragmentRegistrationBinding
+import com.example.pet.databinding.FragmentMainScreenBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -18,16 +14,17 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [RegistrationFragment.newInstance] factory method to
+ * Use the [MainScreenFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class RegistrationFragment : Fragment() {
+class MainScreenFragment : Fragment() {
+
+    private var _binding: FragmentMainScreenBinding? = null
+    private val binding get() = _binding!!
+
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-
-    private var _binding: FragmentRegistrationBinding? = null
-    private val binding get() = _binding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -40,35 +37,9 @@ class RegistrationFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        _binding = FragmentRegistrationBinding.inflate(inflater)
-
-        val continueButton = binding.buttonContinueMain
-        val checkBoxRegistration = binding.checkBoxRegisterMain
-
-        clickNextScreenButton(continueButton, checkBoxRegistration)
-
+    ): View? {
+        _binding = FragmentMainScreenBinding.inflate(inflater)
         return binding.root
-    }
-
-    private fun clickNextScreenButton(buttonNexScreen: View, checkBoxRegister: CheckBox) {
-        buttonNexScreen.setOnClickListener {
-            if (checkBoxRegister.isChecked.not()) {
-                Toast.makeText(requireContext(), "Подтвердите соглашение", Toast.LENGTH_SHORT)
-                    .show()
-            } else {
-                parentFragmentManager.commit {
-                    remove(this@RegistrationFragment)
-                    replace<YearOfBirthFragment>(R.id.registrationFragment)
-                    addToBackStack(YearOfBirthFragment::class.java.simpleName)
-                }
-            }
-        }
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        _binding = null
     }
 
     companion object {
@@ -78,12 +49,12 @@ class RegistrationFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment RegistrationFragment.
+         * @return A new instance of fragment MainScreenFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            RegistrationFragment().apply {
+            MainScreenFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

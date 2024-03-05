@@ -1,6 +1,5 @@
 package com.example.pet
 
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
-import com.example.pet.databinding.FragmentRegistrationBinding
 import com.example.pet.databinding.FragmentYearOfBirthBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -40,11 +38,11 @@ class YearOfBirthFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentYearOfBirthBinding.inflate(inflater)
 
         val backButton = binding.imageButtonBackButtonStep01
-        val buttonCreateAccount = binding.buttonCreateAccountStep01
+        val createAccountButton = binding.buttonCreateAccountStep01
 
         val yearNumberPicker = binding.numberPicker
 
@@ -52,13 +50,23 @@ class YearOfBirthFragment : Fragment() {
             String.format("%d", value)
         }
 
-        backButtonClick(backButton)
-        createAccountButton(buttonCreateAccount)
+        clickBackButton(backButton)
+        clickCreateAccountButton(createAccountButton)
 
         return binding.root
     }
 
-    fun backButtonClick(backButton: View) {
+    private fun clickCreateAccountButton(buttonCreateAccount: View) {
+        buttonCreateAccount.setOnClickListener {
+            parentFragmentManager.commit {
+                remove(this@YearOfBirthFragment)
+                replace<ChooseMoodFragment>(R.id.yearsOfBirdFragment)
+                addToBackStack(ChooseMoodFragment::class.java.simpleName)
+            }
+        }
+    }
+
+    private fun clickBackButton(backButton: View) {
         backButton.setOnClickListener {
             parentFragmentManager.commit {
                 replace<RegistrationFragment>(R.id.yearsOfBirdFragment)
@@ -67,12 +75,6 @@ class YearOfBirthFragment : Fragment() {
         }
     }
 
-    fun createAccountButton(buttonCreateAccount: View) {
-        buttonCreateAccount.setOnClickListener {
-            val intent = Intent(requireContext(), SurveyStep02::class.java)
-            startActivity(intent)
-        }
-    }
     override fun onDestroy() {
         super.onDestroy()
         _binding = null

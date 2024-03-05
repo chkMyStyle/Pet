@@ -22,7 +22,7 @@
 
 
             <ImageButton
-                android:id="@+id/imageButtonBackStep03"
+                android:id="@+id/imageButtonBack"
                 style="@style/BackButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -32,7 +32,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/imageViewProgressBarStep03"
+                android:id="@+id/ImageViewProgressBar"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -41,11 +41,11 @@
                 android:scaleType="centerCrop"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageButtonBackStep03"
+                app:layout_constraintTop_toBottomOf="@+id/imageButtonBack"
                 app:srcCompat="@drawable/progress_bar_step_03" />
 
             <TextView
-                android:id="@+id/textViewTitle1Step03"
+                android:id="@+id/textViewTitle1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="21dp"
@@ -55,10 +55,10 @@
                 android:textColor="@color/color_title_text_step03"
                 android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageViewProgressBarStep03" />
+                app:layout_constraintTop_toBottomOf="@+id/ImageViewProgressBar" />
 
             <ToggleButton
-                android:id="@+id/toggleButton1Step03"
+                android:id="@+id/toggleButton1"
                 style="@style/ToggleButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -67,34 +67,34 @@
                 android:textOff="@string/toggleButton1Step03"
                 android:textOn="@string/toggleButton1Step03"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewTitle1Step03" />
+                app:layout_constraintTop_toBottomOf="@+id/textViewTitle1" />
 
             <ToggleButton
-                android:id="@+id/toggleButton2Step03"
+                android:id="@+id/toggleButton2"
                 style="@style/ToggleButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:textOff="@string/toggleButton2Step03"
                 android:textOn="@string/toggleButton2Step03"
-                app:layout_constraintBottom_toBottomOf="@+id/toggleButton1Step03"
-                app:layout_constraintStart_toEndOf="@+id/toggleButton1Step03"
-                app:layout_constraintTop_toTopOf="@+id/toggleButton1Step03" />
+                app:layout_constraintBottom_toBottomOf="@+id/toggleButton1"
+                app:layout_constraintStart_toEndOf="@+id/toggleButton1"
+                app:layout_constraintTop_toTopOf="@+id/toggleButton1" />
 
             <ToggleButton
-                android:id="@+id/toggleButton3Step03"
+                android:id="@+id/toggleButton3"
                 style="@style/ToggleButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:textOff="@string/toggleButton3Step03"
                 android:textOn="@string/toggleButton3Step03"
-                app:layout_constraintBottom_toBottomOf="@+id/toggleButton2Step03"
-                app:layout_constraintStart_toEndOf="@+id/toggleButton2Step03"
-                app:layout_constraintTop_toTopOf="@+id/toggleButton2Step03" />
+                app:layout_constraintBottom_toBottomOf="@+id/toggleButton2"
+                app:layout_constraintStart_toEndOf="@+id/toggleButton2"
+                app:layout_constraintTop_toTopOf="@+id/toggleButton2" />
 
             <ToggleButton
-                android:id="@+id/toggleButton4Step03"
+                android:id="@+id/toggleButton4"
                 style="@style/ToggleButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -103,22 +103,22 @@
                 android:textOff="@string/toggleButton4Step03"
                 android:textOn="@string/toggleButton4Step03"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/toggleButton1Step03" />
+                app:layout_constraintTop_toBottomOf="@+id/toggleButton1" />
 
             <ToggleButton
-                android:id="@+id/toggleButton5Step03"
+                android:id="@+id/toggleButton5"
                 style="@style/ToggleButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:textOff="@string/toggleButton5Step03"
                 android:textOn="@string/toggleButton5Step03"
-                app:layout_constraintBottom_toBottomOf="@+id/toggleButton4Step03"
-                app:layout_constraintStart_toEndOf="@+id/toggleButton4Step03"
-                app:layout_constraintTop_toTopOf="@+id/toggleButton4Step03" />
+                app:layout_constraintBottom_toBottomOf="@+id/toggleButton4"
+                app:layout_constraintStart_toEndOf="@+id/toggleButton4"
+                app:layout_constraintTop_toTopOf="@+id/toggleButton4" />
 
             <ToggleButton
-                android:id="@+id/toggleButton6Step03"
+                android:id="@+id/toggleButton6"
                 style="@style/ToggleButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -127,10 +127,10 @@
                 android:textOff="@string/toggleButton6Step03"
                 android:textOn="@string/toggleButton6Step03"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/toggleButton4Step03" />
+                app:layout_constraintTop_toBottomOf="@+id/toggleButton4" />
 
             <TextView
-                android:id="@+id/textViewTitle2Step03"
+                android:id="@+id/textViewTitle2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="21dp"
@@ -140,10 +140,10 @@
                 android:textColor="@color/color_title_text_step03"
                 android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/toggleButton6Step03" />
+                app:layout_constraintTop_toBottomOf="@+id/toggleButton6" />
 
             <ToggleButton
-                android:id="@+id/toggleButton7Step03"
+                android:id="@+id/toggleButton7"
                 style="@style/ToggleButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -152,22 +152,22 @@
                 android:textOff="@string/toggleButton7Step03"
                 android:textOn="@string/toggleButton7Step03"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewTitle2Step03" />
+                app:layout_constraintTop_toBottomOf="@+id/textViewTitle2" />
 
             <ToggleButton
-                android:id="@+id/toggleButton8Step03"
+                android:id="@+id/toggleButton8"
                 style="@style/ToggleButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:textOff="@string/toggleButton8Step03"
                 android:textOn="@string/toggleButton8Step03"
-                app:layout_constraintBottom_toBottomOf="@+id/toggleButton7Step03"
-                app:layout_constraintStart_toEndOf="@+id/toggleButton7Step03"
-                app:layout_constraintTop_toTopOf="@+id/toggleButton7Step03" />
+                app:layout_constraintBottom_toBottomOf="@+id/toggleButton7"
+                app:layout_constraintStart_toEndOf="@+id/toggleButton7"
+                app:layout_constraintTop_toTopOf="@+id/toggleButton7" />
 
             <ToggleButton
-                android:id="@+id/toggleButton9Step03"
+                android:id="@+id/toggleButton9"
                 style="@style/ToggleButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -176,22 +176,22 @@
                 android:textOff="@string/toggleButton9Step03"
                 android:textOn="@string/toggleButton9Step03"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/toggleButton7Step03" />
+                app:layout_constraintTop_toBottomOf="@+id/toggleButton7" />
 
             <ToggleButton
-                android:id="@+id/toggleButton10Step03"
+                android:id="@+id/toggleButton10"
                 style="@style/ToggleButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:textOff="@string/toggleButton10Step03"
                 android:textOn="@string/toggleButton10Step03"
-                app:layout_constraintBottom_toBottomOf="@+id/toggleButton9Step03"
-                app:layout_constraintStart_toEndOf="@+id/toggleButton9Step03"
-                app:layout_constraintTop_toTopOf="@+id/toggleButton9Step03" />
+                app:layout_constraintBottom_toBottomOf="@+id/toggleButton9"
+                app:layout_constraintStart_toEndOf="@+id/toggleButton9"
+                app:layout_constraintTop_toTopOf="@+id/toggleButton9" />
 
             <ToggleButton
-                android:id="@+id/toggleButton11Step03"
+                android:id="@+id/toggleButton11"
                 style="@style/ToggleButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -200,22 +200,22 @@
                 android:textOff="@string/toggleButton11Step03"
                 android:textOn="@string/toggleButton11Step03"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/toggleButton9Step03" />
+                app:layout_constraintTop_toBottomOf="@+id/toggleButton9" />
 
             <ToggleButton
-                android:id="@+id/toggleButton12Step03"
+                android:id="@+id/toggleButton12"
                 style="@style/ToggleButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:textOff="@string/toggleButton12Step03"
                 android:textOn="@string/toggleButton12Step03"
-                app:layout_constraintBottom_toBottomOf="@+id/toggleButton11Step03"
-                app:layout_constraintStart_toEndOf="@+id/toggleButton11Step03"
-                app:layout_constraintTop_toTopOf="@+id/toggleButton11Step03" />
+                app:layout_constraintBottom_toBottomOf="@+id/toggleButton11"
+                app:layout_constraintStart_toEndOf="@+id/toggleButton11"
+                app:layout_constraintTop_toTopOf="@+id/toggleButton11" />
 
             <Button
-                android:id="@+id/buttonContinueStep03"
+                android:id="@+id/imageButtonContinue"
                 style="@style/ButtonContinue"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="71dp"
@@ -224,7 +224,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/toggleButton12Step03" />
+                app:layout_constraintTop_toBottomOf="@+id/toggleButton12" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </ScrollView>

@@ -21,20 +21,20 @@
             tools:context=".MainActivity">
 
             <ImageView
-                android:id="@+id/backgroundElementMain"
+                android:id="@+id/imageViewBackground"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginTop="76dp"
                 android:layout_marginBottom="33dp"
                 android:scaleType="center"
                 android:src="@drawable/elements"
-                app:layout_constraintBottom_toBottomOf="@+id/imageCardBgMain"
+                app:layout_constraintBottom_toBottomOf="@+id/imageViewBackground2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textRegisterMain"
+                android:id="@+id/textViewRegister"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -47,7 +47,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/tectDescribeMain"
+                android:id="@+id/textViewDescribe"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -59,10 +59,10 @@
                 android:textSize="22sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textRegisterMain" />
+                app:layout_constraintTop_toBottomOf="@+id/textViewRegister" />
 
             <ImageView
-                android:id="@+id/imageCardBgMain"
+                android:id="@+id/imageViewBackground2"
                 android:layout_width="0dp"
                 android:layout_height="510dp"
                 android:layout_marginStart="20dp"
@@ -73,7 +73,7 @@
                 android:src="@drawable/card_bg"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tectDescribeMain" />
+                app:layout_constraintTop_toBottomOf="@+id/textViewDescribe" />
 
             <ImageView
                 android:id="@+id/imagePlateBgForLogOrRegMain"
@@ -83,9 +83,9 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="20dp"
                 android:src="@drawable/plate_bg_for_log_or_reg"
-                app:layout_constraintEnd_toEndOf="@+id/imageCardBgMain"
-                app:layout_constraintStart_toStartOf="@+id/imageCardBgMain"
-                app:layout_constraintTop_toTopOf="@+id/imageCardBgMain" />
+                app:layout_constraintEnd_toEndOf="@+id/imageViewBackground2"
+                app:layout_constraintStart_toStartOf="@+id/imageViewBackground2"
+                app:layout_constraintTop_toTopOf="@+id/imageViewBackground2" />
 
             <ImageView
                 android:id="@+id/imagePlateChooseRegisterMain"
@@ -139,8 +139,8 @@
                 android:drawableStart="@drawable/profile_1"
                 android:hint="@string/edir_text_hint_full_name"
                 android:inputType="text"
-                app:layout_constraintEnd_toEndOf="@+id/imageCardBgMain"
-                app:layout_constraintStart_toStartOf="@+id/imageCardBgMain"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewBackground2"
+                app:layout_constraintStart_toStartOf="@+id/imageViewBackground2"
                 app:layout_constraintTop_toBottomOf="@+id/imagePlateBgForLogOrRegMain" />
 
             <com.google.android.material.textfield.TextInputEditText
@@ -152,8 +152,8 @@
                 android:drawableStart="@drawable/message"
                 android:hint="@string/edir_text_hint_email"
                 android:inputType="textEmailAddress"
-                app:layout_constraintEnd_toEndOf="@+id/imageCardBgMain"
-                app:layout_constraintStart_toStartOf="@+id/imageCardBgMain"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewBackground2"
+                app:layout_constraintStart_toStartOf="@+id/imageViewBackground2"
                 app:layout_constraintTop_toBottomOf="@+id/textInputEditTextFullNameMain" />
 
             <com.google.android.material.textfield.TextInputEditText
@@ -165,8 +165,8 @@
                 android:drawableStart="@drawable/lock"
                 android:hint="@string/edit_text_hint_password"
                 android:inputType="textPassword"
-                app:layout_constraintEnd_toEndOf="@+id/imageCardBgMain"
-                app:layout_constraintStart_toStartOf="@+id/imageCardBgMain"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewBackground2"
+                app:layout_constraintStart_toStartOf="@+id/imageViewBackground2"
                 app:layout_constraintTop_toBottomOf="@+id/textInputEditTextEnterYourEmailMain" />
 
             <CheckBox
@@ -180,8 +180,8 @@
                 android:text="@string/text_check_box"
                 android:textColor="@color/color_text_main"
                 android:textSize="16sp"
-                app:layout_constraintEnd_toEndOf="@+id/imageCardBgMain"
-                app:layout_constraintStart_toStartOf="@+id/imageCardBgMain"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewBackground2"
+                app:layout_constraintStart_toStartOf="@+id/imageViewBackground2"
                 app:layout_constraintTop_toBottomOf="@+id/textInputEditTextPasswordMain" />
 
             <Button
@@ -190,8 +190,8 @@
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="20dp"
-                app:layout_constraintEnd_toEndOf="@+id/imageCardBgMain"
-                app:layout_constraintStart_toStartOf="@+id/imageCardBgMain"
+                app:layout_constraintEnd_toEndOf="@+id/imageViewBackground2"
+                app:layout_constraintStart_toStartOf="@+id/imageViewBackground2"
                 app:layout_constraintTop_toBottomOf="@+id/checkBoxRegisterMain" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
