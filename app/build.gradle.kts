@@ -48,7 +48,9 @@ dependencies {
     
     implementation("androidx.fragment:fragment-ktx:1.6.2")
 
-//    implementation("com.shawnlin:NumberPicker:2.4.10")
+    implementation("androidx.navigation:navigation-fragment-ktx:2.7.7")
+    implementation("androidx.navigation:navigation-ui-ktx:$2.7.7")
+
     implementation ("io.github.ShawnLin013:number-picker:2.4.13")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")

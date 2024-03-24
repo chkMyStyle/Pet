@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
+import androidx.navigation.fragment.findNavController
 import com.example.pet.databinding.FragmentYearOfBirthBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -58,20 +59,13 @@ class YearOfBirthFragment : Fragment() {
 
     private fun clickCreateAccountButton(buttonCreateAccount: View) {
         buttonCreateAccount.setOnClickListener {
-            parentFragmentManager.commit {
-                remove(this@YearOfBirthFragment)
-                replace<ChooseMoodFragment>(R.id.yearsOfBirdFragment)
-                addToBackStack(ChooseMoodFragment::class.java.simpleName)
-            }
+            findNavController().navigate(R.id.action_yearOfBirthFragment_to_chooseMoodFragment)
         }
     }
 
     private fun clickBackButton(backButton: View) {
         backButton.setOnClickListener {
-            parentFragmentManager.commit {
-                replace<RegistrationFragment>(R.id.yearsOfBirdFragment)
-                addToBackStack(RegistrationFragment::class.java.simpleName)
-            }
+            findNavController().navigate(R.id.action_yearOfBirthFragment_to_registrationFragment)
         }
     }
 

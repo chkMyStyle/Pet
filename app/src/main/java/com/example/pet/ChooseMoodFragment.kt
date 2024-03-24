@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
+import androidx.navigation.fragment.findNavController
 import com.example.pet.databinding.FragmentChooseMoodBinding
 
 
@@ -88,19 +89,13 @@ class ChooseMoodFragment : Fragment() {
 
     private fun clickButtonContinue(buttonContinue: View) {
         buttonContinue.setOnClickListener {
-            parentFragmentManager.commit {
-                replace<MentalHealthFragment>(R.id.mentalHealthFragment)
-            }
+            findNavController().navigate(R.id.action_chooseMoodFragment_to_mentalHealthFragment)
         }
     }
 
     private fun clickBackButton(backButtonStep02: View) {
         backButtonStep02.setOnClickListener {
-            parentFragmentManager.commit {
-                remove(this@ChooseMoodFragment)
-                replace<YearOfBirthFragment>(R.id.yearsOfBirdFragment)
-                addToBackStack(YearOfBirthFragment::class.java.simpleName)
-            }
+            findNavController().navigate(R.id.action_chooseMoodFragment_to_yearOfBirthFragment)
         }
     }
 

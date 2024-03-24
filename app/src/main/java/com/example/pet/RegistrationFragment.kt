@@ -1,5 +1,6 @@
 package com.example.pet
 
+import android.graphics.BlendModeColorFilter
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -7,8 +8,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.CheckBox
 import android.widget.Toast
+import androidx.core.graphics.BlendModeColorFilterCompat
+import androidx.core.graphics.BlendModeCompat
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
+import androidx.navigation.fragment.findNavController
 import com.example.pet.databinding.FragmentRegistrationBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -42,26 +46,45 @@ class RegistrationFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentRegistrationBinding.inflate(inflater)
-
-        val continueButton = binding.buttonContinueMain
-        val checkBoxRegistration = binding.checkBoxRegisterMain
-
-        clickNextScreenButton(continueButton, checkBoxRegistration)
-
         return binding.root
     }
 
-    private fun clickNextScreenButton(buttonNexScreen: View, checkBoxRegister: CheckBox) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val continueButton = binding.buttonContinueMain
+        val checkBoxRegistration = binding.checkBoxRegisterMain
+        val activeColor = resources.getColor(R.color.color_bg_button_cotinue, null)
+        val inactiveColor = resources.getColor(R.color.color_bg_button_cotinue, null)
+
+        checkBoxRegistration.buttonDrawable?.colorFilter =
+            BlendModeColorFilterCompat.createBlendModeColorFilterCompat(
+                inactiveColor,
+                BlendModeCompat.SRC_ATOP
+            )
+        clickNextScreenButton(continueButton, checkBoxRegistration, activeColor, inactiveColor)
+    }
+
+    private fun clickNextScreenButton(
+        buttonNexScreen: View,
+        checkBoxRegister: CheckBox,
+        actColor: Int,
+        inActColor: Int
+    ) {
+        checkBoxRegister.setOnCheckedChangeListener { buttonView, isChecked ->
+            val color = if (isChecked) actColor else inActColor
+            buttonView.buttonDrawable?.colorFilter =
+                BlendModeColorFilterCompat.createBlendModeColorFilterCompat(
+                    color,
+                    BlendModeCompat.SRC_ATOP
+                )
+        }
         buttonNexScreen.setOnClickListener {
             if (checkBoxRegister.isChecked.not()) {
                 Toast.makeText(requireContext(), "Подтвердите соглашение", Toast.LENGTH_SHORT)
                     .show()
             } else {
-                parentFragmentManager.commit {
-                    remove(this@RegistrationFragment)
-                    replace<YearOfBirthFragment>(R.id.registrationFragment)
-                    addToBackStack(YearOfBirthFragment::class.java.simpleName)
-                }
+                findNavController().navigate(R.id.action_registrationFragment_to_yearOfBirthFragment)
             }
         }
     }

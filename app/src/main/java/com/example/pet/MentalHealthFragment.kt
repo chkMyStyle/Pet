@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.commit
 import androidx.fragment.app.replace
+import androidx.navigation.fragment.findNavController
 import com.example.pet.databinding.FragmentMentalHealthBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -85,27 +86,19 @@ class MentalHealthFragment : Fragment() {
                     toggleButton.setTextColor(textColor)
                 }
             }
-
         }
         return binding.root
     }
 
     private fun clickBackButton(backButton: View) {
         backButton.setOnClickListener {
-            parentFragmentManager.commit {
-                remove(this@MentalHealthFragment)
-                replace<ChooseMoodFragment>(R.id.chooseMoodFragment)
-                addToBackStack(ChooseMoodFragment::class.java.simpleName)
-            }
+            findNavController().navigate(R.id.action_mentalHealthFragment_to_chooseMoodFragment)
         }
     }
 
     private fun clickContinueButton(view: View) {
         view.setOnClickListener {
-            parentFragmentManager.commit {
-                replace<MainScreenFragment>(R.id.mainScreenFragment)
-                addToBackStack(MentalHealthFragment::class.java.simpleName)
-            }
+            findNavController().navigate(R.id.action_mentalHealthFragment_to_mainScreenFragment)
         }
     }
 

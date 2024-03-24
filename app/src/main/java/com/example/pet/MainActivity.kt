@@ -10,9 +10,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        supportFragmentManager.commit {
-            replace<RegistrationFragment>(R.id.registrationFragment)
-
-        }
+//        supportFragmentManager.commit {
+//            replace<RegistrationFragment>(R.id.mainFragmentContainer)
+//        }
     }
 }
