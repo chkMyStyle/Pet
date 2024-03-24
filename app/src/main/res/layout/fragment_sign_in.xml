@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_background_fragment"
+    tools:context=".SignInFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewBackground"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="76dp"
+            android:layout_marginBottom="33dp"
+            android:scaleType="center"
+            android:src="@drawable/elements"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="85dp"
+            android:fontFamily="@font/pt_serif_bold"
+            android:text="@string/text_sign_in"
+            android:textColor="@color/white_main"
+            android:textSize="36sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="72dp"
+            android:fontFamily="@font/pt_sans"
+            android:text="@string/text_discription_sign_in"
+            android:textColor="@color/color_text_main"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <ImageView
+            android:id="@+id/imageViewBackground2SignIn"
+            android:layout_width="0dp"
+            android:layout_height="410dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="20dp"
+            android:alpha="0.9"
+            android:scaleType="centerCrop"
+            android:src="@drawable/card_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <ImageView
+            android:id="@+id/imagePlateBgForLogOrRegMainSignIn"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/plate_bg_for_log_or_reg"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewBackground2SignIn"
+            app:layout_constraintStart_toStartOf="@+id/imageViewBackground2SignIn"
+            app:layout_constraintTop_toTopOf="@+id/imageViewBackground2SignIn" />
+
+        <ImageView
+            android:id="@+id/imagePlateChooseRegisterMain"
+            android:layout_width="148dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:scaleType="center"
+            android:src="@drawable/plate_choose_register"
+            app:layout_constraintBottom_toBottomOf="@+id/imagePlateBgForLogOrRegMainSignIn"
+            app:layout_constraintStart_toStartOf="@+id/imagePlateBgForLogOrRegMainSignIn"
+            app:layout_constraintTop_toTopOf="@+id/imagePlateBgForLogOrRegMainSignIn" />
+
+        <TextView
+            android:id="@+id/textForChooseMyAccountMain"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="40dp"
+            android:fontFamily="@font/pt_sans_bold"
+            android:gravity="center"
+            android:text="@string/text_my_account"
+
+            android:textColor="@color/color_text_main"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imagePlateChooseRegisterMain"
+            app:layout_constraintStart_toStartOf="@+id/imagePlateBgForLogOrRegMainSignIn"
+            app:layout_constraintTop_toTopOf="@+id/imagePlateChooseRegisterMain" />
+
+        <TextView
+            android:id="@+id/textForChooseRegisterMain"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="50dp"
+            android:clickable="true"
+            android:fontFamily="@font/pt_sans_bold"
+            android:gravity="center"
+            android:text="@string/text_register"
+            android:textColor="@color/color_text_My_Account"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imagePlateChooseRegisterMain"
+            app:layout_constraintEnd_toEndOf="@+id/imagePlateBgForLogOrRegMainSignIn"
+            app:layout_constraintTop_toTopOf="@+id/imagePlateChooseRegisterMain"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputEditTextEnterYourEmail"
+            style="@style/Hint_drawable_for_edit_text"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="20dp"
+            android:drawableStart="@drawable/message"
+            android:hint="@string/edir_text_hint_email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewBackground2SignIn"
+            app:layout_constraintStart_toStartOf="@+id/imageViewBackground2SignIn"
+            app:layout_constraintTop_toBottomOf="@+id/imagePlateBgForLogOrRegMainSignIn" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditTextPassword"
+            style="@style/Hint_drawable_for_edit_text"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:drawableStart="@drawable/lock"
+            android:hint="@string/edit_text_hint_password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewBackground2SignIn"
+            app:layout_constraintStart_toStartOf="@+id/imageViewBackground2SignIn"
+            app:layout_constraintTop_toBottomOf="@+id/inputEditTextEnterYourEmail" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/pt_sans_bold"
+            android:text="@string/forgot_password_sign_in"
+            android:textColor="@color/color_text_main"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewBackground2SignIn"
+            app:layout_constraintTop_toBottomOf="@+id/textInputEditTextPassword" />
+
+        <Button
+            android:id="@+id/buttonSingIn"
+            style="@style/ButtonContinue.ButtonSingIn"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageViewBackground2SignIn"
+            app:layout_constraintStart_toStartOf="@+id/imageViewBackground2SignIn"
+            app:layout_constraintTop_toBottomOf="@+id/textView13" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

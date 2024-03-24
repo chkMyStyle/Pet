@@ -6,9 +6,9 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_meditation"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/ic_meditation"
         android:supportsRtl="true"
         android:theme="@style/Theme.Pet"
         tools:targetApi="31">
@@ -22,11 +22,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.pet.SurveyStep01" />
-        <activity android:name="com.example.pet.SurveyStep02" />
-        <activity android:name="com.example.pet.SurveyStep03" />
-        <activity android:name="com.example.pet.HomeStep04" />
-
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

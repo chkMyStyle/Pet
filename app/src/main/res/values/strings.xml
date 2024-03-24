@@ -36,8 +36,11 @@
     <string name="toggleButton10Step03">Spirituality</string>
     <string name="toggleButton11Step03">Mindfulness</string>
     <string name="toggleButton12Step03">Meditation</string>
+    <string name="text_sign_in">Sign In</string>
+    <string name="text_discription_sign_in">Sign in now to acces your excercises and saved music.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="forgot_password_sign_in">Forgot password?</string>
 
 
 </resources>

@@ -57,6 +57,12 @@ class RegistrationFragment : Fragment() {
         val activeColor = resources.getColor(R.color.color_bg_button_cotinue, null)
         val inactiveColor = resources.getColor(R.color.color_bg_button_cotinue, null)
 
+        val switchSingInFragment = binding.textForChooseMyAccountMain
+
+        switchSingInFragment.setOnClickListener {
+            findNavController().navigate(R.id.action_registrationFragment_to_signInFragment)
+        }
+
         checkBoxRegistration.buttonDrawable?.colorFilter =
             BlendModeColorFilterCompat.createBlendModeColorFilterCompat(
                 inactiveColor,

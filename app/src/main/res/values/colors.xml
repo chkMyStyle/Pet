@@ -8,7 +8,7 @@
     <!--    Other colors-->
     <color name="white">#FFFFFFFF</color>
     <color name="color_plate_choose_register">#219653</color>
-    <color name="background_activity_register">#07362E</color>
+    <color name="base_background_fragment">#07362E</color>
     <color name="bg_for_register_form">#0D473D</color>
     <color name="plate_bg_for_log_or_reg">#08352E</color>
     <color name="color_for_sroke_shape">#638A84</color>

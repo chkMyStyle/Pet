@@ -15,4 +15,8 @@
     <style name="ButtonCreateAccount" parent="ButtonContinue">
         <item name="android:text">@string/text_button_create_account</item>
     </style>
+
+    <style name="ButtonContinue.ButtonSingIn">
+        <item name="android:text">@string/text_sign_in</item>
+    </style>
 </resources>
